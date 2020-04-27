@@ -1,0 +1,31 @@
+<resources>
+    <string name="action_check">"Check"</string>
+    <string name="action_settings">"Settings"</string>
+    <string name="action_cancel">"Cancel"</string>
+    <string name="action_save">"Save"</string>
+    <string name="customer_list">"Customer List"</string>
+    <string name="add_customer">"Add Customer"</string>
+    <string name="empty_list_header">"This Customer List is empty!"</string>
+    <string name="empty_list_body">"Once you add a new customer, you'll see it listed here"</string>
+    <string name="exit">"Press back again to exit"</string>
+    <string name="name">"Customer Name"</string>
+    <string name="surname">"Customer Surname"</string>
+    <string name="phone_number">"Customer Phone Number"</string>
+    <string name="serial_number">"Meter Serial Number"</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="error_message_title">"Service Error"</string>
+    <string name="hint_server_url">"Server Url"</string>
+    <string name="restart_app">"Restart Application for the changes to be applied."</string>
+</resources>

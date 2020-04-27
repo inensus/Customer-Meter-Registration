@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".view.activity.DashboardActivity">
+
+    <fragment
+        android:id="@+id/customerListFragment"
+        android:name="com.inensus.android.view.fragment.CustomerListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.inensus.android.view.fragment.AddCustomerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        app:bb_behavior="shifting|underNavbar"
+        app:bb_tabXmlResource="@xml/bottombar" />
+
+</RelativeLayout>

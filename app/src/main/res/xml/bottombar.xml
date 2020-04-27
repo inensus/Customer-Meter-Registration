@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/user_list"
+        id="@+id/tab_customer_list"
+        title="@string/customer_list" />
+    <tab
+        barColorWhenSelected="@color/colorPrimaryDark"
+        icon="@drawable/add_user"
+        id="@+id/tab_add_customer"
+        title="@string/add_customer" />
+</tabs>

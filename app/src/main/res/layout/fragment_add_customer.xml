@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="100dp"
+                android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/name"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="6dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/surname"
+        android:drawableLeft="@drawable/surname"
+        android:drawablePadding="6dp"
+        android:hint="@string/surname"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surname"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/phone_number"
+        android:drawableLeft="@drawable/phone_number"
+        android:drawablePadding="6dp"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/serialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/serial_number"
+        android:drawableLeft="@drawable/serial_number"
+        android:drawablePadding="6dp"
+        android:hint="@string/serial_number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serialNumber"
+        android:background="@drawable/bg_spinner">
+
+        <ImageView
+            android:id="@+id/ivManufacturer"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/manufacturer" />
+
+        <Spinner
+            android:id="@+id/spManufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivManufacturer"
+            android:background="@android:color/transparent"
+            android:theme="@style/spinnerStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlManufacturer"
+        android:background="@drawable/bg_spinner">
+
+        <ImageView
+            android:id="@+id/ivMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/meter_type" />
+
+        <Spinner
+            android:id="@+id/spMeter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivMeter"
+            android:background="@android:color/transparent"
+            android:theme="@style/spinnerStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTariff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMeter"
+        android:background="@drawable/bg_spinner">
+
+        <ImageView
+            android:id="@+id/ivTariff"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/tariff" />
+
+        <Spinner
+            android:id="@+id/spTariff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivTariff"
+            android:background="@android:color/transparent"
+            android:theme="@style/spinnerStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTariff"
+        android:background="@drawable/bg_spinner">
+
+        <ImageView
+            android:id="@+id/ivCity"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/manufacturer" />
+
+        <Spinner
+            android:id="@+id/spCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivCity"
+            android:background="@android:color/transparent"
+            android:theme="@style/spinnerStyle" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
